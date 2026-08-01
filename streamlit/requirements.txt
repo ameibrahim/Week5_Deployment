@@ -1,5 +1,4 @@
-ultralytics
-fastapi 
-uvicorn 
-python-multipart 
+streamlit
+ultralytics-opencv-headless
 pillow
+numpy
