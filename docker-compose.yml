@@ -1,7 +1,7 @@
 services:
   yolo-api:
     build:
-      context: .
+      context: ./api
       dockerfile: Dockerfile
 
     container_name: yolo-api
