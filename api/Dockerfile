@@ -2,7 +2,6 @@ FROM python:3.11-slim
 
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
-ENV MODEL_PATH=/app/models/best.pt
 
 WORKDIR /app
 
@@ -19,7 +18,7 @@ RUN pip install --no-cache-dir --upgrade pip \
     && pip install --no-cache-dir -r requirements.txt
 
 COPY app.py .
-COPY models ./models
+COPY yolo11n.pt .
 
 EXPOSE 8003
 
