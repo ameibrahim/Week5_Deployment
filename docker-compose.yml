@@ -1,0 +1,15 @@
+services:
+  yolo-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: yolo-api
+
+    ports:
+      - "8003:8003"
+
+    environment:
+      PORT: 8003
+
+    restart: unless-stopped
