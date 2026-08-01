@@ -265,8 +265,7 @@ export default function Page() {
               analysis
             </div>
             <h1 className="max-w-3xl text-4xl leading-[1.08] font-semibold sm:text-5xl">
-              Turn any image into{" "}
-              <span className="text-[#ff806d]">visible insight.</span>
+              Predict Items Within Your Image
             </h1>
             <p className="max-w-2xl text-sm leading-6 text-white/75 sm:text-base">
               Upload a photo to detect and locate objects. Review every

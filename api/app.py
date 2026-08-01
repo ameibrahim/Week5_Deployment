@@ -9,6 +9,7 @@ app = FastAPI()
 model = YOLO("yolo11n.pt")
 
 
+# url/predict
 @app.post("/predict")
 async def predict(file: UploadFile = File(...)):
     image = Image.open(BytesIO(await file.read())).convert("RGB")
